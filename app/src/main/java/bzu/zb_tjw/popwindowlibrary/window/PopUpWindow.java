@@ -27,7 +27,7 @@ public class PopUpWindow extends Dialog implements PopWindowInterface, DialogInt
         PopWindowInterface.OnStartShowListener, PopWindowInterface.OnStartDismissListener {
 
     private FrameLayout mRootLayout;
-    private FrameLayout mContainLayout;
+    private LinearLayout mContainLayout;
     private PopUpView mPopUpView;
     private LinearLayout mContentLayout;
     private PopWindow mPopWindow;
@@ -72,7 +72,7 @@ public class PopUpWindow extends Dialog implements PopWindowInterface, DialogInt
         mPopUpView.setTitleAndMessage(title, message);
 
         mContentLayout = (LinearLayout) findViewById(R.id.layout_bottom);
-        mContainLayout = (FrameLayout) findViewById(R.id.layout_contain);
+        mContainLayout = (LinearLayout) findViewById(R.id.layout_contain);
     }
 
     private void initAnim() {

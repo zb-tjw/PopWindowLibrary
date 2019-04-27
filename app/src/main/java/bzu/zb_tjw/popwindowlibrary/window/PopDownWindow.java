@@ -34,7 +34,7 @@ public class PopDownWindow extends PopupWindow implements PopWindowInterface, Vi
     private Activity mActivity;
     private View mPopWindowLayout;
     private FrameLayout mRootLayout;
-    private FrameLayout mContainLayout;
+    private LinearLayout mContainLayout;
     private PopDownView mPopDownView;
     private LinearLayout mContentLayout;
     private PopWindow mPopWindow;
@@ -83,7 +83,7 @@ public class PopDownWindow extends PopupWindow implements PopWindowInterface, Vi
         mPopDownView.setTitleAndMessage(title, message);
 
         mContentLayout = (LinearLayout) view.findViewById(R.id.layout_top);
-        mContainLayout = (FrameLayout) view.findViewById(R.id.layout_contain);
+        mContainLayout = (LinearLayout) view.findViewById(R.id.layout_contain);
     }
 
     private void setListener() {

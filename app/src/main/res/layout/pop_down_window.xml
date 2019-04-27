@@ -5,10 +5,11 @@
     android:layout_height="match_parent"
     android:background="#70000000">
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/layout_contain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <bzu.zb_tjw.popwindowlibrary.view.PopDownView
             android:id="@+id/popDownView"
@@ -24,5 +25,5 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:visibility="gone" />
-    </FrameLayout>
+    </LinearLayout>
 </FrameLayout>

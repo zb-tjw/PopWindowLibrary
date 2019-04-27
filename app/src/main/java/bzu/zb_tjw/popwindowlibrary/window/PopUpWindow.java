@@ -196,7 +196,6 @@ public class PopUpWindow extends Dialog implements PopWindowInterface, DialogInt
 
     @Override
     public void setPopWindowMargins(int leftMargin, int topMargin, int rightMargin, int bottomMargin) {
-//        LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) mContainLayout.getLayoutParams();
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) mContainLayout.getLayoutParams();
         layoutParams.setMargins(leftMargin, topMargin, rightMargin, bottomMargin);
         mContainLayout.setLayoutParams(layoutParams);
